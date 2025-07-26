@@ -1,0 +1,39 @@
+@font-face {
+  font-family: 'greekFont';
+  src: url('../fonts/DIOGENES.ttf');
+}
+
+h1, h2 {
+    font-family: greekFont;
+}
+
+body {
+    background-color: rgb(235, 200, 160);
+}
+
+object {
+    display: none;
+}
+
+img {
+    width: 90%;
+    
+}
+
+.divCenter {
+    display: flex;
+    justify-content: center;
+}
+
+.txtCenter {
+    text-align: center;
+}
+
+.header {
+    margin: 50px;
+}
+
+#form {
+    margin-bottom: 50px;
+    margin-top: -20px
+}

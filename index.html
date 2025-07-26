@@ -4,11 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>River of Data </title>
+
+    <!-- Styling -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
-    <p>Hello There!</p>
-    <br>
-    <p>This site will be used in the printing station of Mystery Night</p>
-    <p>Dimitrios is currently developing this website, it will be ready by O-Week.</p>
+    <div class="row">
+        <div class="col-1">
+            <img src="images/column.png">
+        </div>
+        <div class="col-10">
+            <div class="row divCenter">
+                <div class="col txtCenter header">
+                    <h1>Station 3: River of Data</h1>
+                    <h2>Only the correct password unlocks the lost scroll.</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col divCenter">
+                    <form id="form">
+                        <input type="text" id="password" name="password" placeholder="Password">
+                        <input type="submit" value="Submit" onclick="checkPass()">
+                    </form>
+                </div>
+            </div>
+            <div class="row divCenter">
+                <div class="col">
+                    <object id="pdf" data="data/scroll.pdf" type="application/pdf" width="100%" height="500px">
+                        <p>Unable to display PDF file. <a href="data/temp.pdf">Download</a> instead.</p>
+                    </object>
+                </div>
+            </div>
+        </div>
+        <div class="col-1">
+            <img src="images/column.png">
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 </body>
+<script>
+    document.getElementById("form").addEventListener("submit", function(event) {
+        event.preventDefault(); // Stops the page from reloading
+    });
+</script>
 </html>
